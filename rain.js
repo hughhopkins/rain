@@ -16,7 +16,13 @@ if (Meteor.isClient) {
 
   Template.leaderboard.events({
     'click input.inc': function () {
-      Players.update(Session.get("selected_player"), {$inc: {score: 574}});
+      Players.update(Session.get("selected_player"), {$inc: {score: 10000}});
+    }
+  });
+
+    Template.leaderboard.events({
+    'click input.inc2': function () {
+      Players.update(Session.get("selected_player"), {$inc: {score: -10000}});
     }
   });
 
@@ -36,7 +42,8 @@ if (Meteor.isServer) {
                   "Ali",
                   "Hugh",
                   "Elmo",
-                  "Alice"];
+                  "Alice",
+                  "Felicity"];
       for (var i = 0; i < names.length; i++)
         Players.insert({name: names[i], score: Math.floor(Random.fraction()*10)*5});
     }

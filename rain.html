@@ -1,10 +1,18 @@
 <head>
-  <title>Who is the biggest batty</title>
+  <title>Who is the biggest?</title>
+ 	 <script>
+  !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+  arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+  d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+  insertBefore(d,q)}(window,document,'script','_gs');
+  
+  _gs('GSN-776848-K');
+	</script>
 </head>
 
 <body>
 	<div id="outer">
-		<h1>Who is the biggest batty?</h1>
+		<h1>Who is the biggest?</h1>
 		{{> leaderboard}}
 	</div>
 </body>
@@ -19,12 +27,13 @@
 	{{#if selected_name}}
 	<div class="details">
 		<div class="name">{{selected_name}}</div>
-		<input type="button" class="inc" value="Give 10 Battys" />
+		<input type="button" class="inc" value="Give 10,000 poitns" />
+		<input type="button" class="inc2" value="Reverse 10,000 points" />
 	</div>
 	{{/if}}
 
 	{{#unless selected_name}}
-	<div class="none">Click a tosser to select</div>
+	<div class="none">Click a person to vote</div>
 	{{/unless}}
 </template>
 
