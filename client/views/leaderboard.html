@@ -1,0 +1,19 @@
+<template name="leaderboard">
+	<div class="leaderboard">
+		{{#each players}}
+			{{> player}}
+		{{/each}}
+	</div>
+
+	{{#if selected_name}}
+	<div class="details">
+		<div class="name">{{selected_name}}</div>
+		<input type="button" class="inc" value="Give 10,000 poitns" />
+		<input type="button" class="inc2" value="Reverse 10,000 points" />
+	</div>
+	{{/if}}
+
+	{{#unless selected_name}}
+	<div class="none">Click a person to vote</div>
+	{{/unless}}
+</template>
