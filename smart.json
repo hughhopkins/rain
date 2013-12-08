@@ -1,6 +1,8 @@
 {
   "packages": {
     "iron-router": {},
-    "spin": {}
+    "spin": {},
+    "moment": {},
+    "twilio-meteor": {}
   }
 }
