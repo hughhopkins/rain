@@ -21,6 +21,13 @@ Template.leaderboard.events({
   }
 });
 
+Template.leaderboard.events({
+  'click input.inc2': function () {
+    Players.update(Session.get("selected_player"), {$inc: {score: -5}});
+    console.log("downvote - Template.leaderboard.events");
+  }
+});
+
 Template.player.events({
   'click': function () {
     Session.set("selected_player", this._id);
