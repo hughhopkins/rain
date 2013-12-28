@@ -1,11 +1,11 @@
 <template name="leaderboard">
+	<div>
+		{{> twitter}}
+	</div>
 	<div class="leaderboard">
 		{{#each players}}
 			{{> player}}
 		{{/each}}
-	</div>
-	<div>
-		{{> twilio}}
 	</div>
 
 	{{#if selected_name}}

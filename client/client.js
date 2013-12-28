@@ -18,6 +18,8 @@ Template.leaderboard.events({
   'click input.inc': function () {
     Players.update(Session.get("selected_player"), {$inc: {score: 5}});
     console.log("upvote - Template.leaderboard.events");
+    _gs('event', 'Upvoted player');
+    mixpanel.track("Upvoted");
   }
 });
 
@@ -25,6 +27,8 @@ Template.leaderboard.events({
   'click input.inc2': function () {
     Players.update(Session.get("selected_player"), {$inc: {score: -5}});
     console.log("downvote - Template.leaderboard.events");
+    _gs('event', 'Downvoted player');
+    mixpanel.track("Downvoted");
   }
 });
 
