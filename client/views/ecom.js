@@ -13,7 +13,7 @@ Template.ecom.events({
   },
   {
     name: 'Product 2',
-    price: 5,
+    price: 50054832793000,
     category: 'Test Products'
   }
 ]);
@@ -31,12 +31,12 @@ Template.ecom.events({
 }, [
   {
     name: 'Product 3',
-    price: 10,
+    price: 100435434000,
     quantity: 5
   },
   {
     name: 'Product 4',
-    price: 50,
+    price: 50000,
     category: 'Test Products'
   }
 ]);
