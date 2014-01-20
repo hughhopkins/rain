@@ -130,3 +130,9 @@ background-image: -webkit-linear-gradient(top left, #FF5E3A 0%, #FF2A68 100%);
 /* W3C Markup, IE10 Release Preview */ 
 background-image: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%);
 }
+
+.eshop1 {
+    width: 200px;
+    height: 50px;
+    background-color: #2ecc71;
+}

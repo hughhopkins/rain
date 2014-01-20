@@ -7,14 +7,15 @@ Template.ecom.events({
   track: true
 }, [
   {
-    name: 'Product 1',
+    name: 'Creme Egg',
     price: 1,
-    quantity: 5
+    quantity: 5,
+    category: 'Food'
   },
   {
-    name: 'Product 2',
-    price: 50054832793000,
-    category: 'Test Products'
+    name: 'iPhone',
+    price: 768,
+    category: 'Technology'
   }
 ]);
     mixpanel.track("ecom1");
@@ -24,22 +25,42 @@ Template.ecom.events({
 Template.ecom.events({
   'click input.ecom2': function () {
     console.log("ecom2");
-    _gs('transaction', 'Transaction ID', {
+    _gs('transaction', 'Transaction ID1', {
   // revenue: 5.99,
   // quantity: 10,
   track: true
 }, [
   {
-    name: 'Product 3',
-    price: 100435434000,
-    quantity: 5
+    name: 'New Balance Trainers',
+    price: 34,
+    quantity: 3,
+    category: 'Shoes'
   },
   {
-    name: 'Product 4',
-    price: 50000,
-    category: 'Test Products'
+    name: 'Coffee Table',
+    price: 7983,
+    category: 'Home Items'
   }
 ]);
     mixpanel.track("ecom2");
+  }
+});
+
+Template.ecom.events({
+  'click input.ecom3': function () {
+    console.log("ecom3");
+    _gs('transaction', 'Transaction ID2', {
+  // revenue: 5.99,
+  // quantity: 10,
+  track: true
+}, [
+  {
+    name: 'Wine',
+    price: 12,
+    quantity: 5,
+    category: 'Booze'
+  },
+]);
+    mixpanel.track("ecom3");
   }
 });
