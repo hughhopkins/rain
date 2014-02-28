@@ -19,12 +19,6 @@ Template.eshop.events({
         price: 6.00
   }]
 });
-    analytics.track('Viewed Product', {
-      id: '507f1f77bcf86cd799439011',
-      sku: '45790-32',
-      name: 'Porsche',
-      price: 999.90
-});
     _gs('transaction', 'Transaction ID5', {
   // revenue: 5.99,
   // quantity: 10,
