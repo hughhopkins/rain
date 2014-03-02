@@ -22,19 +22,24 @@
 
 	<div>
 		{{> ecom}}
-		<a href="{{pathFor 'eshop'}}" onclick="analytics.track('Viewed Product', {
-  id: '507f1f77bcf86cd799439011',
-  sku: '45790-32',
-  name: 'Monopoly: 3rd Edition',
-  price: 18.99
-});"><h2>More at the Car Shop</h2></a>
-		<a href="{{pathFor 'phones'}}" onclick="analytics.track('Viewed Product', {
-  id: '507f1f77bcf86cd799439011',
-  sku: '45790-32',
-  name: 'iPhone',
-  price: 699
-});"><h2>More at the Phone Shop</h2></a>
-		<a href="{{pathFor 'about'}}" onclick="analytics.track('Clicked on About page', {
-});">About</a>
+			<a href="{{pathFor 'eshop'}}" onclick="analytics.track('Viewed Product', {
+  				id: '507f1f77bcf86cd799439011',
+  				sku: '45790-32',
+  				name: 'Monopoly: 3rd Edition',
+  				price: 18.99
+			});"><h2>More at the Car Shop</h2></a>
+			
+			<a href="{{pathFor 'phones'}}" onclick="analytics.track('Viewed Product', {
+  				id: '507f1f77bcf86cd799439011',
+  				sku: '45790-32',
+  				name: 'iPhone',
+  				price: 699
+			});"><h2>More at the Phone Shop</h2></a>
+			
+			<a href="{{pathFor 'about'}}" onclick="analytics.track('Clicked on About page', {
+			});">About</a>
+		
+			<a href="{{pathFor 'addressBook'}}" onclick="analytics.track('Clicked on Address Book page', {
+			});">Address Book</a>
 	</div>
 </template>
